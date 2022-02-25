@@ -1,0 +1,17 @@
+<!--The content below is only a placeholder and can be replaced.-->
+<div style="text-align:center">
+  <h1 *ngIf="name === ''">
+    Hello World Application
+  </h1>
+
+  <h1 *ngIf="name !== ''"> Hello {{name}}</h1>
+</div>
+
+
+<div class="w3-container">
+  
+  <input type="text" #text placeholder="enter your name"> 
+  <button (click)="getName(text.value)">Submit</button>
+</div>
+
+<router-outlet></router-outlet>
